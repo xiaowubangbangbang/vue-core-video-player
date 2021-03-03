@@ -1,18 +1,15 @@
-git clone https://github.com/xiaowubangbangbang/vue-core-video-player.git
-
-cd vue-core-video-player 
+git clone https://github.com/xiaowubangbangbang/vue-core-video-player.git\
+cd vue-core-video-player\
 //导入依赖
-npm install 
+npm install \
 //运行
-npm run serve
+npm run serve\
 //打包
-npm run build 
+npm run build \
+打包之后可以丢进nginx运行,将打包好的dist内容替换nginx目录下html内容,配置监听,启动nginx\
 
-打包之后可以丢进nginx运行,将打包好的dist内容替换nginx目录下html内容,配置监听,启动nginx
-
-修改/html/static/data.js可以动态修改数据
-本地视频源放在/html/static/vedio下
-新增一个视频
+修改/html/static/data.js可以动态修改数据,本地视频源放在/html/static/vedio下\
+新增一个视频\
 {
   id: '视频id',
   title: '标题',
@@ -36,7 +33,7 @@ npm run build
    }
  ],
   duration: '视频时长'
-}
+}\
 
 //如果不需要多个清晰度 将source:[]替换成source:'视频源'
 
